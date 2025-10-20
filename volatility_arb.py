@@ -3,7 +3,6 @@
 import pandas as pd
 import numpy as np
 from arch import arch_model
-from tqdm import trange
 
 
 def garch_forecast(
@@ -80,4 +79,5 @@ def regime_indicator(
     regime_scale[p_hi.isna()] = np.nan
 
     return regime_scale
+
 
